@@ -1,0 +1,205 @@
+
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+	 <meta charset="utf-8">
+    <meta name="description" content="description">
+    <meta name="keywords" content="keywords">
+	
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SCSS</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+	
+	 <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+   <link rel="stylesheet" href="css/slide_push_menus.css">
+	 <link rel="stylesheet" href="css/jquery.bxslider.css">
+	 <link rel="stylesheet" href="css/screen.css" />
+   <link rel="stylesheet" href="css/responsive.css" />
+   <link rel="stylesheet" href="css/responsive_height.css" />
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="js/jquery.min.js"></script>	
+	<script src="js/animate-css.js"></script>
+  <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+ <!--<script type="text/javascript" src="js/jquery.mousewheel.js"></script>-->
+   <script type="text/javascript" src="js/slide_push_menus.js"></script>
+  <!--<script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>-->
+  <script type="text/javascript" src="js/functions.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+	
+      
+</head>	
+
+
+
+<body class="cbp-spmenu-push">
+  <!--выезжающее левое меню -->
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+  <h3><img alt="Логотип" src="img/sq.jpg"> <div id="cbp-spmenu-close-left" class="cbp-spmenu-close"><span class="left_line_close"></span><span class="right_line_close"></span></div></h3> 
+    <div class="cbp_spmenu_links">
+      <a href="">link 1</a>
+      <a href="">link 2</a>
+      <a href="">link 3</a>
+      <a href="">link 4</a>
+      <a href="">link 5</a>
+      <a href="">link 6</a>
+      <a href="">link 7</a>
+      <a href="">link 1</a>
+      <a href="">link 2</a>
+      <a href="">link 3</a>
+      <a href="">link 4</a>
+      <a href="">link 5</a>
+      <a href="">link 6</a>
+      <a href="">link 7</a>
+    </div> 
+</nav>
+  <!--выезжающее правое меню -->
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+  <h3><img alt="Логотип" src="img/sq.jpg"> <div id="cbp-spmenu-close-right" class="cbp-spmenu-close"><span class="left_line_close"></span><span class="right_line_close"></span></div></h3> 
+    <div class="cbp_spmenu_links">
+      <a href="">link 1</a>
+      <a href="">link 2</a>
+      <a href="">link 3</a>
+      <a href="">link 4</a>
+      <a href="">link 5</a>
+      <a href="">link 6</a>
+      <a href="">link 7</a>
+      <a href="">link 1</a>
+      <a href="">link 2</a>
+      <a href="">link 3</a>
+      <a href="">link 4</a>
+      <a href="">link 5</a>
+      <a href="">link 6</a>
+      <a href="">link 7</a>
+    </div> 
+</nav>
+
+<nav class="cbp-spmenu cbp-spmenu-horizontal cbp-spmenu-top" id="cbp-spmenu-s3">
+  <h3><img alt="Логотип" src="img/sq.jpg"> <div id="cbp-spmenu-close-top" class="cbp-spmenu-close"><span class="left_line_close"></span><span class="right_line_close"></span></div></h3> 
+    <div class="cbp_spmenu_links">
+      <a href="">link 1</a>
+      <a href="">link 2</a>
+      <a href="">link 3</a>
+      <a href="">link 4</a>
+      <a href="">link 5</a>
+      <a href="">link 6</a>
+      <a href="">link 7</a>
+      <a href="">link 1</a>
+      <a href="">link 2</a>
+      <a href="">link 3</a>
+      <a href="">link 4</a>
+      <a href="">link 5</a>
+      <a href="">link 6</a>
+      <a href="">link 7</a>
+    </div> 
+</nav>
+
+<nav class="cbp-spmenu cbp-spmenu-horizontal cbp-spmenu-bottom" id="cbp-spmenu-s4">
+  <h3><img alt="Логотип" src="img/sq.jpg"> <div id="cbp-spmenu-close-bottom" class="cbp-spmenu-close"><span class="left_line_close"></span><span class="right_line_close"></span></div></h3> 
+    <div class="cbp_spmenu_links">
+      <a href="">link 1</a>
+      <a href="">link 2</a>
+      <a href="">link 3</a>
+      <a href="">link 4</a>
+      <a href="">link 5</a>
+      <a href="">link 6</a>
+      <a href="">link 7</a>
+      <a href="">link 1</a>
+      <a href="">link 2</a>
+      <a href="">link 3</a>
+      <a href="">link 4</a>
+      <a href="">link 5</a>
+      <a href="">link 6</a>
+      <a href="">link 7</a>
+    </div> 
+</nav>
+
+<nav id="nav">
+  <div class="nav_inner container">
+    <div class="logo"> <a href=""> <img src="img/logo.png" alt=""> </a> </div>
+    <div class="nav_items">
+      <a href="">link 1</a>
+      <a href="">link 2</a>
+      <a href="">link 3</a>
+      <a href="">link 4</a>
+      <a href="">link 5</a>
+      <a href="">link 6</a>
+      <a href="">link 7</a>      
+    </div>
+     <a class="toggle_mnu" id="showLeft_gamburger" ><span></span><span></span><span></span></a>
+  </div>  
+</nav>
+
+<main id="main">
+  <section class="screen_lend" id="screen1">
+    <div class="container">  
+    <article>
+      <h2>Slide Menus</h2>     
+      <button id="showLeft">Show/Hide Left Slide Menu</button>
+      <button id="showRight">Show/Hide Right Slide Menu</button>
+      <button id="showTop">Show/Hide Top Slide Menu</button>
+      <button id="showBottom">Show/Hide Bottom Slide Menu</button>
+    </article>
+     <article class="buttonset">
+        <h2>Push Menus</h2>       
+        <button id="showLeftPush">Show/Hide Left Push Menu</button>
+        <button id="showRightPush">Show/Hide Right Push Menu</button>
+      </article>  
+    </div>
+  </section>
+
+  <section class="screen_lend" id="screen2">
+    
+  </section>
+
+
+
+  <section class="screen_lend" id="screen3">
+    
+  </section>
+
+
+
+  <section class="screen_lend" id="screen4">
+
+   </section>
+
+
+ 
+  <section class="screen_lend" id="screen5">
+ </section>
+
+
+
+ 
+  <section class="screen_lend" id="screen6">
+
+  </section>
+
+
+ 
+  <section class="screen_lend" id="screen7">
+  </section>
+
+
+  <section class="screen_lend" id="screen8">
+  </section>
+
+ <footer id="footer">
+   
+ </footer>
+
+</main>
+
+</body>
+</html>
+
+
+
