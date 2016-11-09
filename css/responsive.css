@@ -1,0 +1,56 @@
+/*************media*******************/
+
+
+@media screen and (max-width:1199px){
+
+
+}/*1199*/
+
+
+@media screen and (max-width:991px){
+	.toggle_mnu{
+    display: block;
+  }
+
+#nav .nav_inner .nav_items{
+    display: none;
+  }
+
+}/*991*/
+
+
+
+
+@media screen and (max-width:767px){
+
+}/*767*/
+
+
+
+@media screen and (max-width:560px){
+
+
+}/*560*/
+
+
+
+
+@media screen and (max-width:486px){
+
+
+}/*486*/
+
+@media screen and (max-width:410px){
+
+
+
+}/*410*/
+
+
+
+
+
+@media screen and (max-width:350px){
+
+
+}/*350*

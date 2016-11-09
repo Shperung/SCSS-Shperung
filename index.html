@@ -11,7 +11,8 @@
     <title>SCSS</title>
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-	
+	 <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
 	 <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/normalize.min.css">
    <link rel="stylesheet" href="css/slide_push_menus.css">
@@ -26,6 +27,7 @@
     <![endif]-->
 
     <script src="js/jquery.min.js"></script>	
+    <script src="js/jquery-ui.min.js"></script>  
 	<script src="js/animate-css.js"></script>
   <script type="text/javascript" src="js/jquery.bxslider.js"></script>
  <!--<script type="text/javascript" src="js/jquery.mousewheel.js"></script>-->
@@ -36,10 +38,34 @@
 	
       
 </head>	
-
+<!-- иконки беру с http://cssicon.space/  -->
 
 
 <body class="cbp-spmenu-push">
+<section id="overlay"></section>
+  <div id="popup_state" class="popup">
+        <div class="popup-close"><span class="left_line_close"></span><span class="right_line_close"></span></div>
+        <div class="popup-inner">
+          
+        </div>
+  </div>
+    <div id="popup_img" class="popup">
+        <div class="popup-close"><span class="left_line_close"></span><span class="right_line_close"></span></div>
+        <div class="popup-inner">
+          
+        </div>
+  </div>
+    <div id="popup_form" class="popup">
+        <div class="popup-close"><span class="left_line_close"></span><span class="right_line_close"></span></div>
+        <div class="popup-inner">
+          <form action="">
+          	<input type="text">
+          	<input type="text">
+          	<input type="text">
+          	<button>Отправить</button>
+          </form>
+        </div>
+  </div>
   <!--выезжающее левое меню -->
 <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
   <h3><img alt="Логотип" src="img/sq.jpg"> <div id="cbp-spmenu-close-left" class="cbp-spmenu-close"><span class="left_line_close"></span><span class="right_line_close"></span></div></h3> 
@@ -138,58 +164,98 @@
 </nav>
 
 <main id="main">
-  <section class="screen_lend" id="screen1">
+  <section class="main_section" id="screen1">
     <div class="container">  
     <article>
       <h2>Slide Menus</h2>     
-      <button id="showLeft">Show/Hide Left Slide Menu</button>
-      <button id="showRight">Show/Hide Right Slide Menu</button>
-      <button id="showTop">Show/Hide Top Slide Menu</button>
-      <button id="showBottom">Show/Hide Bottom Slide Menu</button>
+      <button id="showLeft"><div class="icon arrowRight"></div></button>
+      <button id="showRight"><div class="icon arrowLeft"></div></button>
+      <button id="showTop"><div class="icon arrowDown"></div></button>
+      <button id="showBottom"><div class="icon arrowUp"></div></button>
     </article>
      <article class="buttonset">
         <h2>Push Menus</h2>       
-        <button id="showLeftPush">Show/Hide Left Push Menu</button>
-        <button id="showRightPush">Show/Hide Right Push Menu</button>
+        <button id="showLeftPush"><div class="icon arrowRight"></div><div class="indent icon"></div></button>
+        <button id="showRightPush"><div class="outdent icon"></div><div class="icon arrowLeft"></button>
       </article>  
     </div>
   </section>
 
-  <section class="screen_lend" id="screen2">
-    
+  <section class="main_section" id="screen2">
+    <div class="container">
+      <form action="#"> 
+        <fieldset>
+          <h2><label for="speed">Select a speed</label></h2> 
+          <select class="custom_select_ui" name="speed" id="speed">
+            <option>Slower</option>
+            <option>Slow</option>
+            <option selected="selected">Medium</option>
+            <option>Fast</option>
+            <option>Faster</option>
+          </select>   
+        </fieldset>  
+      </form>
+    </div>
   </section>
 
 
 
-  <section class="screen_lend" id="screen3">
-    
+  <section class="main_section" id="screen3">
+    <div class="container">
+      <h2><label for="amount">Price range:</label></h2>
+      <input type="text" id="amount" readonly >
+      <div id="slider_range"></div>
+    </div>    
   </section>
 
 
 
-  <section class="screen_lend" id="screen4">
-
+  <section class="main_section" id="screen4">
+   <h2>Tabs</h2> 
+    <div id="tabs" class="container">
+      <ul>
+        <li><a href="#tabs-1">Tab 1</a></li>
+        <li><a href="#tabs-2">Tab 2</a></li>
+        <li><a href="#tabs-3">Tab 3</a></li>
+      </ul>
+      <div id="tabs-1">
+        <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+      </div>
+      <div id="tabs-2">
+        <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+      </div>
+      <div id="tabs-3">
+        <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+        <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+      </div>
+    </div>
    </section>
 
 
  
-  <section class="screen_lend" id="screen5">
- </section>
+  <section class="main_section" id="screen5">
+  <h2>POPUP</h2> 
+    <div class="container popup_btn">
+        <button class="state_popup">State</button>
+        <button class="img_popup">Img</button>
+        <button class="img_popup">Form</button>
+    </div>
+  </section>
 
 
 
  
-  <section class="screen_lend" id="screen6">
+  <section class="main_section" id="screen6">
 
   </section>
 
 
  
-  <section class="screen_lend" id="screen7">
+  <section class="main_section" id="screen7">
   </section>
 
 
-  <section class="screen_lend" id="screen8">
+  <section class="main_section" id="screen8">
   </section>
 
  <footer id="footer">
@@ -197,6 +263,13 @@
  </footer>
 
 </main>
+
+
+<section class="git">
+  
+  git change
+</section>
+
 
 </body>
 </html>
